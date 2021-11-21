@@ -1,0 +1,28 @@
+{
+  "name": "100-days-of-code",
+  "version": "1.0.0",
+  "description": "## Contents",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "update-twitter-banner": "node update-twitter-banner.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Resocio/100-days-of-code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Resocio/100-days-of-code/issues"
+  },
+  "homepage": "https://github.com/Resocio/100-days-of-code#readme",
+  "keywords": [],
+  "dependencies": {
+    "@resoc/core": "^0.9.0",
+    "@resoc/create-img": "^0.9.0",
+    "dotenv": "^10.0.0",
+    "twitter-api-client": "^1.4.0"
+  }
+}

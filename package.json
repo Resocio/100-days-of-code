@@ -20,8 +20,8 @@
   "homepage": "https://github.com/Resocio/100-days-of-code#readme",
   "keywords": [],
   "dependencies": {
-    "@resoc/core": "^0.9.0",
-    "@resoc/create-img": "^0.9.0",
+    "@resoc/core": "^0.9.1",
+    "@resoc/create-img": "^0.9.1",
     "dotenv": "^10.0.0",
     "twitter-api-client": "^1.4.0"
   }

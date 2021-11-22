@@ -6,13 +6,6 @@ import { TwitterClient } from 'twitter-api-client';
 import { createImage } from '@resoc/create-img';
 
 const updateTwitterBanner = async() => {
-  const twitterApiKey = process.env.TWITTER_API_KEY;
-  const twitterApiSecret = process.env.TWITTER_API_SECRET;
-  if (!twitterApiKey || !twitterApiSecret) {
-    console.log("ERROR: Twitter credentials are not configured");
-    return;
-  }
-
   let currentDay = -1;
   const activeDays = [];
   const log = await fs.promises.readFile('log.md', { encoding: 'utf8' });
@@ -51,8 +44,8 @@ const updateTwitterBanner = async() => {
   console.log("New banner generated");
 
   const twitterClient = new TwitterClient({
-    apiKey: twitterApiKey,
-    apiSecret: twitterApiSecret,
+    apiKey: process.env.TWITTER_API_KEY,
+    apiSecret: process.env.TWITTER_API_SECRET,
     accessToken: process.env.TWITTER_ACCESS_TOKEN,
     accessTokenSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
   });
